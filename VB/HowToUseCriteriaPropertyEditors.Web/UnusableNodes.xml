@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <DetailViewItems Id="DetailViewItems">
+    <PropertyEditor Name="PropertyEditors">
+      <ModelNode UnusableNodeName="DefaultEditor" PropertyType="System.String" EditorType="DevExpress.ExpressApp.Web.Editors.ASPx.ASPxStringPropertyEditor" />
+      <ModelNode UnusableNodeName="DefaultEditor" PropertyType="System.Int32" EditorType="DevExpress.ExpressApp.Web.Editors.ASPx.ASPxIntPropertyEditor" />
+      <ModelNode UnusableNodeName="DefaultEditor" PropertyType="System.Boolean" EditorType="DevExpress.ExpressApp.Web.Editors.ASPx.ASPxBooleanPropertyEditor" />
+      <ModelNode UnusableNodeName="DefaultEditor" PropertyType="System.Byte[]" EditorType="DevExpress.ExpressApp.Web.Editors.ASPx.ASPxByteArrayPropertyEditor" />
+      <ModelNode UnusableNodeName="DefaultEditor" PropertyType="System.Int64" EditorType="DevExpress.ExpressApp.Web.Editors.ASPx.ASPxInt64PropertyEditor" />
+      <ModelNode UnusableNodeName="DefaultEditor" PropertyType="System.Byte" EditorType="DevExpress.ExpressApp.Web.Editors.ASPx.ASPxBytePropertyEditor" />
+      <ModelNode UnusableNodeName="DefaultEditor" PropertyType="DevExpress.Xpo.IXPSimpleObject" EditorType="DevExpress.ExpressApp.Web.Editors.ASPx.ASPxLookupPropertyEditor" />
+      <ModelNode UnusableNodeName="DefaultEditor" PropertyType="System.Decimal" EditorType="DevExpress.ExpressApp.Web.Editors.ASPx.ASPxDecimalPropertyEditor" />
+      <ModelNode UnusableNodeName="DefaultEditor" PropertyType="System.Enum" EditorType="DevExpress.ExpressApp.Web.Editors.ASPx.ASPxEnumPropertyEditor" />
+      <ModelNode UnusableNodeName="DefaultEditor" PropertyType="System.Double" EditorType="DevExpress.ExpressApp.Web.Editors.ASPx.ASPxDoublePropertyEditor" />
+      <ModelNode UnusableNodeName="DefaultEditor" PropertyType="System.Single" EditorType="DevExpress.ExpressApp.Web.Editors.ASPx.ASPxFloatPropertyEditor" />
+      <ModelNode UnusableNodeName="DefaultEditor" PropertyType="System.DateTime" EditorType="DevExpress.ExpressApp.Web.Editors.ASPx.ASPxDateTimePropertyEditor" />
+      <ModelNode UnusableNodeName="DefaultEditor" PropertyType="System.TimeSpan" EditorType="DevExpress.ExpressApp.Web.Editors.ASPx.ASPxTimeSpanPropertyEditor" />
+    </PropertyEditor>
+  </DetailViewItems>
+</Application>

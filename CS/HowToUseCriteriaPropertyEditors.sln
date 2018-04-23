@@ -1,0 +1,31 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HowToUseCriteriaPropertyEditors.Module", "HowToUseCriteriaPropertyEditors.Module\HowToUseCriteriaPropertyEditors.Module.csproj", "{6317944F-E42B-4D72-9B4F-A7DB2F8DEA7E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HowToUseCriteriaPropertyEditors.Web", "HowToUseCriteriaPropertyEditors.Web\HowToUseCriteriaPropertyEditors.Web.csproj", "{05D72CF6-99F1-4BBE-ACF9-A9B8B09FAE57}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HowToUseCriteriaPropertyEditors.Win", "HowToUseCriteriaPropertyEditors.Win\HowToUseCriteriaPropertyEditors.Win.csproj", "{874A3D9A-86C9-436B-B6EA-E8A78A823158}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6317944F-E42B-4D72-9B4F-A7DB2F8DEA7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6317944F-E42B-4D72-9B4F-A7DB2F8DEA7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6317944F-E42B-4D72-9B4F-A7DB2F8DEA7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6317944F-E42B-4D72-9B4F-A7DB2F8DEA7E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05D72CF6-99F1-4BBE-ACF9-A9B8B09FAE57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05D72CF6-99F1-4BBE-ACF9-A9B8B09FAE57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05D72CF6-99F1-4BBE-ACF9-A9B8B09FAE57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05D72CF6-99F1-4BBE-ACF9-A9B8B09FAE57}.Release|Any CPU.Build.0 = Release|Any CPU
+		{874A3D9A-86C9-436B-B6EA-E8A78A823158}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{874A3D9A-86C9-436B-B6EA-E8A78A823158}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{874A3D9A-86C9-436B-B6EA-E8A78A823158}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{874A3D9A-86C9-436B-B6EA-E8A78A823158}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
