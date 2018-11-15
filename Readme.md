@@ -1,3 +1,9 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [CriteriaController.cs](./CS/HowToUseCriteriaPropertyEditors.Module/CriteriaController.cs) (VB: [CriteriaController.vb](./VB/HowToUseCriteriaPropertyEditors.Module/CriteriaController.vb))
+* **[FilteringCriterion.cs](./CS/HowToUseCriteriaPropertyEditors.Module/FilteringCriterion.cs) (VB: [FilteringCriterion.vb](./VB/HowToUseCriteriaPropertyEditors.Module/FilteringCriterion.vb))**
+<!-- default file list end -->
 # How to use Criteria Property Editors
 
 
