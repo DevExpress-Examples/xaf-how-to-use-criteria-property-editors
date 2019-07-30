@@ -6,7 +6,7 @@
 <!-- default file list end -->
 # How to use Criteria Property Editors
 <!-- run online -->
-**[[Run Online]](https://codecentral.devexpress.com/e932)**
+**[[Run Online]](https://codecentral.devexpress.com/e932/)**
 <!-- run online end -->
 
 
