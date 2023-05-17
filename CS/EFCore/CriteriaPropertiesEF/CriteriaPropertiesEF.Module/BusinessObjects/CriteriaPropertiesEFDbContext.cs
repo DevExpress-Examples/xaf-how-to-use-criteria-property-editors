@@ -38,7 +38,7 @@ public class CriteriaPropertiesEFEFCoreDbContext : DbContext {
 	}
     public DbSet<Product> Products { get; set; }
     public DbSet<MyPerson> MyPersons { get; set; }
-    public DbSet<FilteringCriterion> FilteringCriterions { get; set; }
+    public DbSet<FilteringCriterion> FilteringCriteria { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder) {
         base.OnModelCreating(modelBuilder);

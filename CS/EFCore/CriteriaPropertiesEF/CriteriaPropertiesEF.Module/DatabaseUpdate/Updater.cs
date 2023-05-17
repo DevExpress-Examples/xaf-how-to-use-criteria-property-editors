@@ -105,14 +105,14 @@ public class Updater : ModuleUpdater {
             sampleCriterion5 = ObjectSpace.CreateObject<FilteringCriterion>();
             sampleCriterion5.Description = "Manager is Mary Tellitson";
             sampleCriterion5.ObjectType = typeof(Product);
-            sampleCriterion5.Criterion = "[Manager.FullName] == 'Mary Tellitson'";
+            sampleCriterion5.Criterion = "[Manager.LastName] == 'Tellitson'";
         }
         FilteringCriterion sampleCriterion6 = ObjectSpace.FindObject<FilteringCriterion>(CriteriaOperator.Parse("Description == 'Manager is John Nilsen'"));
         if (sampleCriterion6 == null) {
             sampleCriterion6 = ObjectSpace.CreateObject<FilteringCriterion>();
             sampleCriterion6.Description = "Manager is John Nilsen";
             sampleCriterion6.ObjectType = typeof(Product);
-            sampleCriterion6.Criterion = "[Manager.FullName] == 'John Nilsen'";
+            sampleCriterion6.Criterion = "[Manager.LastName] == 'Nilsen'";
         }
 
         FilteringCriterion sampleCriterion7 = ObjectSpace.FindObject<FilteringCriterion>(CriteriaOperator.Parse("Description == 'Has email'"));
