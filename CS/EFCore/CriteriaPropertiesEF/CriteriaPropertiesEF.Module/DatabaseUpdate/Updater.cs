@@ -2,11 +2,11 @@
 using DevExpress.Data.Filtering;
 using DevExpress.Persistent.Base;
 using DevExpress.ExpressApp.Updating;
-using DevExpress.Xpo;
-using DevExpress.ExpressApp.Xpo;
+using DevExpress.ExpressApp.EF;
+using DevExpress.Persistent.BaseImpl.EF;
 using HowToUseCriteriaPropertyEditors.Module;
 
-namespace CriteriaProperties.Module.DatabaseUpdate;
+namespace CriteriaPropertiesEF.Module.DatabaseUpdate;
 
 // For more typical usage scenarios, be sure to check out https://docs.devexpress.com/eXpressAppFramework/DevExpress.ExpressApp.Updating.ModuleUpdater
 public class Updater : ModuleUpdater {
@@ -19,14 +19,14 @@ public class Updater : ModuleUpdater {
         if (cnt > 0) {
             return;
         }
-        MyPerson samplePerson1 = ObjectSpace.FindObject<MyPerson>(CriteriaOperator.Parse("FullName == 'Mary Tellitson'"));
+        MyPerson samplePerson1 = ObjectSpace.FindObject<MyPerson>(CriteriaOperator.Parse("LastName == 'Tellitson'"));
         if (samplePerson1 == null) {
             samplePerson1 = ObjectSpace.CreateObject<MyPerson>();
             samplePerson1.FirstName = "Mary";
             samplePerson1.LastName = "Tellitson";
             samplePerson1.Email = "mary@example.com";
         }
-        MyPerson samplePerson2 = ObjectSpace.FindObject<MyPerson>(CriteriaOperator.Parse("FullName == 'John Nilsen'"));
+        MyPerson samplePerson2 = ObjectSpace.FindObject<MyPerson>(CriteriaOperator.Parse("LastName == 'Nilsen'"));
         if (samplePerson2 == null) {
             samplePerson2 = ObjectSpace.CreateObject<MyPerson>();
             samplePerson2.FirstName = "John";
@@ -126,8 +126,5 @@ public class Updater : ModuleUpdater {
     }
     public override void UpdateDatabaseBeforeUpdateSchema() {
         base.UpdateDatabaseBeforeUpdateSchema();
-        //if(CurrentDBVersion < new Version("1.1.0.0") && CurrentDBVersion > new Version("0.0.0.0")) {
-        //    RenameColumn("DomainObject1Table", "OldColumnName", "NewColumnName");
-        //}
     }
 }

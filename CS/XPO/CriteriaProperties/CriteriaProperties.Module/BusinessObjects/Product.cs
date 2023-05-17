@@ -21,9 +21,9 @@ namespace HowToUseCriteriaPropertyEditors.Module {
             get { return GetPropertyValue<int>("Quantity"); }
             set { SetPropertyValue<int>("Quantity", value); }
         }
-        public Person Manager {
-            get { return GetPropertyValue<Person>("Manager"); }
-            set { SetPropertyValue<Person>("Manager", value); }
+        public MyPerson Manager {
+            get { return GetPropertyValue<MyPerson>("Manager"); }
+            set { SetPropertyValue<MyPerson>("Manager", value); }
         }
     }
 }
