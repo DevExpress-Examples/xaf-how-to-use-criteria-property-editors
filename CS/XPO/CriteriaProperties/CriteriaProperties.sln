@@ -3,12 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33424.131
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CriteriaProperties.Blazor.Server", "CriteriaProperties.Blazor.Server\CriteriaProperties.Blazor.Server.csproj", "{FC6E7ADD-0C08-4B3C-8C01-4D4516553040}"
+EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CriteriaProperties.Module", "CriteriaProperties.Module\CriteriaProperties.Module.csproj", "{2D9D8351-65FA-4D7B-8F57-CDA8EE4CDFC1}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CriteriaProperties.Win", "CriteriaProperties.Win\CriteriaProperties.Win.csproj", "{BB2E9274-4F28-450D-9A8E-1F526373C305}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CriteriaProperties.Blazor.Server", "CriteriaProperties.Blazor.Server\CriteriaProperties.Blazor.Server.csproj", "{FC6E7ADD-0C08-4B3C-8C01-4D4516553040}"
-EndProject
+
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
