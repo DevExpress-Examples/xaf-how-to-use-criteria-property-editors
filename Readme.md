@@ -9,6 +9,7 @@
 # How to use Criteria Property Editors
 
 This example illustrates the specifics of using Criteria Property Editors in an XAF application. 
+![image](https://github.com/DevExpress-Examples/XAF_how-to-use-criteria-property-editors-e932/assets/14300209/70622811-3dfb-417c-9d05-31113a228fe3)
 
 ## Implementation Details
 The complete description is available in the following help topic: [Use Criteria Property Editors](https://docs.devexpress.com/eXpressAppFramework/113143/ui-construction/view-items-and-property-editors/property-editors/use-criteria-property-editors).
