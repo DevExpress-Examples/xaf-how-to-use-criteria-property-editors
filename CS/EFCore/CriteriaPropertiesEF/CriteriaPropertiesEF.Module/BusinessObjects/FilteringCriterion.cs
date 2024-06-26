@@ -1,10 +1,10 @@
+using System.ComponentModel;
+using System.ComponentModel.DataAnnotations.Schema;
 using DevExpress.ExpressApp;
 using DevExpress.ExpressApp.DC;
 using DevExpress.ExpressApp.Editors;
 using DevExpress.Persistent.Base;
 using DevExpress.Persistent.BaseImpl.EF;
-using System.ComponentModel;
-using System.ComponentModel.DataAnnotations.Schema;
 
 namespace HowToUseCriteriaPropertyEditors.Module {
     [DefaultClassOptions, ImageName("Action_Filter")]
@@ -23,7 +23,7 @@ namespace HowToUseCriteriaPropertyEditors.Module {
         }
 
         [NotMapped, ImmediatePostData]
-        public virtual Type ObjectType {
+        public Type ObjectType {
             get { return objectType; }
             set {
                 if (objectType == value)
