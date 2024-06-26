@@ -21,7 +21,6 @@ Refer to the following help topic for step-by-step instructions: [How to: Enable
 
 - [Criteria Properties](https://docs.devexpress.com/eXpressAppFramework/113564/business-model-design-orm/data-types-supported-by-built-in-editors/criteria-properties)
 - [How to: Enable Database Storage for User-Defined Criteria that Filter a List View](https://docs.devexpress.com/eXpressAppFramework/113143/ui-construction/view-items-and-property-editors/property-editors/use-criteria-property-editors)
-=======
 
 <!-- feedback -->
 ## Does this example address your development requirements/objectives?
