@@ -17,10 +17,13 @@ Refer to the following help topic for step-by-step instructions: [How to: Enable
 - [CriteriaController.cs](CS/EFCore/CriteriaPropertiesEF/CriteriaPropertiesEF.Module/Controllers/CriteriaController.cs) 
 - [FilteringCriterion.cs](CS/EFCore/CriteriaPropertiesEF/CriteriaPropertiesEF.Module/BusinessObjects/FilteringCriterion.cs) 
 
+<<<<<<< updateReadme
 ## Documentation
 
 - [Criteria Properties](https://docs.devexpress.com/eXpressAppFramework/113564/business-model-design-orm/data-types-supported-by-built-in-editors/criteria-properties)
 - [How to: Enable Database Storage for User-Defined Criteria that Filter a List View](https://docs.devexpress.com/eXpressAppFramework/113143/ui-construction/view-items-and-property-editors/property-editors/use-criteria-property-editors)
+=======
+>>>>>>> 23.1.1+
 <!-- feedback -->
 ## Does this example address your development requirements/objectives?
 
