@@ -6,7 +6,7 @@
 
 # XAF - How to use Criteria Property Editors
 
-This example designs and saves filtering criteria at runtime in an XAF application.
+This example designs and saves filter criteria at runtime in an XAF application.
 
 ![image](https://github.com/DevExpress-Examples/XAF_how-to-use-criteria-property-editors-e932/assets/14300209/70622811-3dfb-417c-9d05-31113a228fe3)
 
