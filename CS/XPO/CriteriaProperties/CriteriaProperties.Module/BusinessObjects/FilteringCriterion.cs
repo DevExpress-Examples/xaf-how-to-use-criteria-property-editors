@@ -1,35 +1,58 @@
-using System;
-using DevExpress.Xpo;
 using DevExpress.ExpressApp;
+using DevExpress.ExpressApp.Editors;
 using DevExpress.Persistent.Base;
 using DevExpress.Persistent.BaseImpl;
-using DevExpress.Persistent.Validation;
-using DevExpress.ExpressApp.Editors;
-using DevExpress.ExpressApp.Utils;
+using DevExpress.Xpo;
 using System.ComponentModel;
 
 namespace HowToUseCriteriaPropertyEditors.Module {
     [DefaultClassOptions, ImageName("Action_Filter")]
     public class FilteringCriterion : BaseObject {
         public FilteringCriterion(Session session) : base(session) { }
+
+        private string description;
         public string Description {
-            get { return GetPropertyValue<string>("Description"); }
-            set { SetPropertyValue<string>("Description", value); }
+            get { return description; }
+            set { SetPropertyValue<string>(nameof(Description), ref description, value); }
         }
-        [ValueConverter(typeof(TypeToStringConverter)), ImmediatePostData]
-        [TypeConverter(typeof(LocalizedClassInfoTypeConverter))]
-        public Type ObjectType {
-            get { return GetPropertyValue<Type>("ObjectType"); }
+
+        private string objectTypeName;
+        [Browsable(false)]
+        public string ObjectTypeName {
+            get { return objectTypeName; }
             set {
-                SetPropertyValue<Type>("ObjectType", value); 
-                Criterion = String.Empty;
+                Type type = XafTypesInfo.Instance.FindTypeInfo(value) == null ? null :
+                    XafTypesInfo.Instance.FindTypeInfo(value).Type;
+                if (objectType != type) {
+                    objectType = type;
+                }
+                if (!IsLoading && value != objectTypeName) {
+                    Criterion = string.Empty;
+                }
+                SetPropertyValue<string>(nameof(ObjectTypeName), ref objectTypeName, value);
             }
         }
-        [CriteriaOptions("ObjectType"), Size(SizeAttribute.Unlimited)]
+
+        private Type objectType;
+        [TypeConverter(typeof(LocalizedClassInfoTypeConverter))]
+        [ImmediatePostData, NonPersistent]
+        public Type ObjectType {
+            get { return objectType; }
+            set {
+                if (objectType != value) {
+                    objectType = value;
+                    ObjectTypeName = (value == null) ? null : value.FullName;
+                }
+            }
+        }
+
+        private string criterion;
+        [CriteriaOptions(nameof(ObjectType))]
+        [Size(SizeAttribute.Unlimited)]
         [EditorAlias(EditorAliases.PopupCriteriaPropertyEditor)]
         public string Criterion {
-            get { return GetPropertyValue<string>("Criterion"); }
-            set { SetPropertyValue<string>("Criterion", value); }
+            get { return criterion; }
+            set { SetPropertyValue<string>(nameof(Criterion), ref criterion, value); }
         }
     }
 }

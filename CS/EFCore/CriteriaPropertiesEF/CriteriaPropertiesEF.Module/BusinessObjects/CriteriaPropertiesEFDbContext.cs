@@ -43,6 +43,5 @@ public class CriteriaPropertiesEFEFCoreDbContext : DbContext {
     protected override void OnModelCreating(ModelBuilder modelBuilder) {
         base.OnModelCreating(modelBuilder);
         modelBuilder.HasChangeTrackingStrategy(ChangeTrackingStrategy.ChangingAndChangedNotificationsWithOriginalValues);
-        modelBuilder.Entity<FilteringCriterion>().Property(e => e.ObjectType).HasConversion(v => v.FullName, v => ReflectionHelper.FindType((string)v));
     }
 }
