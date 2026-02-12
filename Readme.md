@@ -24,7 +24,7 @@ Refer to the following help topic for step-by-step instructions: [How to: Enable
 - [How to: Enable Database Storage for User-Defined Criteria that Filter a List View](https://docs.devexpress.com/eXpressAppFramework/113143/ui-construction/view-items-and-property-editors/property-editors/use-criteria-property-editors)
 
 <!-- feedback -->
-## Does this example address your development requirements/objectives?
+## Does This Example Address Your Development Requirements/Objectives?
 
 [<img src="https://www.devexpress.com/support/examples/i/yes-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=xaf-how-to-use-criteria-property-editors&~~~was_helpful=yes) [<img src="https://www.devexpress.com/support/examples/i/no-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=xaf-how-to-use-criteria-property-editors&~~~was_helpful=no)
 
