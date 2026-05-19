@@ -14,7 +14,6 @@ public class CriteriaPropertiesWindowsFormsApplication : WinApplication {
 		SplashScreen = new DXSplashScreen(typeof(XafSplashScreen), new DefaultOverlayFormOptions());
         ApplicationName = "CriteriaProperties";
         CheckCompatibilityType = DevExpress.ExpressApp.CheckCompatibilityType.DatabaseSchema;
-        UseOldTemplates = false;
         DatabaseVersionMismatch += CriteriaPropertiesWindowsFormsApplication_DatabaseVersionMismatch;
         CustomizeLanguagesList += CriteriaPropertiesWindowsFormsApplication_CustomizeLanguagesList;
     }

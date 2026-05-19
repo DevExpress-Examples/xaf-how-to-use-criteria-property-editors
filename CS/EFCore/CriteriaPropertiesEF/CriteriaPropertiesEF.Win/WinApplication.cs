@@ -1,5 +1,4 @@
-﻿using System.ComponentModel;
-using DevExpress.ExpressApp;
+﻿using DevExpress.ExpressApp;
 using DevExpress.ExpressApp.ApplicationBuilder;
 using DevExpress.ExpressApp.Win;
 using DevExpress.ExpressApp.Updating;
@@ -18,7 +17,6 @@ public class CriteriaPropertiesEFWindowsFormsApplication : WinApplication {
 		SplashScreen = new DXSplashScreen(typeof(XafSplashScreen), new DefaultOverlayFormOptions());
         ApplicationName = "CriteriaPropertiesEF";
         CheckCompatibilityType = DevExpress.ExpressApp.CheckCompatibilityType.DatabaseSchema;
-        UseOldTemplates = false;
         DatabaseVersionMismatch += CriteriaPropertiesEFWindowsFormsApplication_DatabaseVersionMismatch;
         CustomizeLanguagesList += CriteriaPropertiesEFWindowsFormsApplication_CustomizeLanguagesList;
     }
